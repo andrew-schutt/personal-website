@@ -16,8 +16,19 @@
         ga('create', 'UA-54330894-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script>
+    function{
+    var xmlHttp = null;
+
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "http://peaceful-cove-7016.herokuapp.com/nextgame", false );
+    xmlHttp.send( null );
+    console.log(xmlHttp.responseText);
+    };
+    </script>
 </head>
 <body>
+    
 <div id="w">
     <header id="logo"><a href="index.html"><span id="logobg">AndrewSchutt.net</span></a></header>
     <nav id="navigation">
@@ -41,7 +52,14 @@
 
         <p>For reference these are the sites that I pull my inspiration from.
             <a href="http://thuongvuho.com/">http://thuongvuho.com/ </a> and <a href="http://jenniferdewalt.com/">http://jenniferdewalt.com/</a></p>
+        
+        <div id="btcqrcode">
+            </br>
+            <p>- Buy me a coffee by sending a buck to my BTC address -</p>
+            <div id="bitCoinAddress"><img src="images/btcqr.png" ></img></div>
+        </div>
     </div>
 </div>
+    
 </body>
 			

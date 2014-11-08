@@ -80,3 +80,6 @@ a:hover { color: #7d94bb; }
   text-shadow: 1px 1px 1px #000;
 }
 #navigation ul li a:hover { color: #a8d6e7; }
+
+#btcqrcode { width: 70%;  margin-left: auto; margin-right: auto; }
+#bitCoinAddress { width: 50%; margin-right: auto; margin-left: auto; }
