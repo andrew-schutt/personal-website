@@ -1,0 +1,95 @@
+/*******************************************************************************
+Ball Bounce
+*******************************************************************************/
+#container1 {
+  border: none;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  left: 200px;
+  -webkit-animation: bounce-ball .7s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+  animation: bounce-ball .7s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+  -moz-animation: bounce-ball .7s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+  -o-animation: bounce-ball .7s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+}
+
+#container2 {
+  border: none;
+  height: 150px;
+  width: 150px;
+  -webkit-animation: ball-container .7s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+  animation: ball-container .7s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+  -moz-animation: ball-container .7s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+  -o-animation: ball-container .7s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+}
+
+#ball {
+  border: none;
+  height: inherit;
+  width: 150px;
+}
+
+
+
+#shadow {
+  border: none;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  bottom: 410px;
+  left: 200px;
+  border-radius: 50%;
+  background: rgba(20, 20, 20, .1);
+  box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+}
+
+.shadow-bounce {
+  -webkit-animation: shadow-bounce .7s cubic-bezier(0.10, 2.40, 0.85, 2.50) infinite;
+  animation: shadow-bounce .7s cubic-bezier(0.10, 2.40, 0.85, 2.50) infinite;
+  -moz-animation: shadow-bounce .7s cubic-bezier(0.10, 2.40, 0.85, 2.50) infinite;
+  -o-animation: shadow-bounce .7s cubic-bezier(0.10, 2.40, 0.85, 2.50) infinite;
+}
+
+.ball-roll {
+  -webkit-animation: ball-roll .7s linear infinite;
+  animation: ball-roll .7s linear infinite;
+  -wmoz-animation: ball-roll 1.2s ease infinite;
+  -o-animation: ball-roll 1.2s ease infinite;
+}
+
+/*for modern browsers*/
+@-webkit-keyframes ball-roll {
+  to {
+    -webkit-transform: rotate(-180deg);
+  }
+}
+
+@-webkit-keyframes shadow-bounce {
+  from, to {
+    -webkit-transform: scale(.35);
+  }
+  80% {
+    -webkit-transform: scale(.65);
+  }
+}
+
+@-webkit-keyframes ball-container {
+  from, to {
+    height: 130px;
+  }
+  90% {
+    height: 145px;
+  }
+}
+
+
+@-webkit-keyframes bounce-ball {
+  from, to {
+    bottom: 600px;
+    height: 85px;
+  }
+  75% {
+    bottom: 695px;
+    height: 93px;
+  }
+}
